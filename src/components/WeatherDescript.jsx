@@ -78,7 +78,7 @@ async function WeatherDescript(question, weatherData) {
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-flash",
     systemInstruction:
-      "In a conversational professional tone, answer the [Question] based on the [Weather Data].\n\nProvide an opinion about what the weather feels like.\nProvide temperature in either Celsius or Fahrenheit, whichever is more appropriate.\nNever display the temperature in Kelvin.\nProvide a recommendation on how to prepare and what to wear (e.g. bring an umbrella, wear a windbreaker, a warm jacket, etc.).\nRespond to activity-related questions (e.g. 'Can I play cricket today in Delhi?') with appropriate advice based on the weather conditions.",
+      "In a conversational professional tone, answer the [Question] based on the [Weather Data].\n\nProvide an opinion about what the weather feels like.\nProvide temperature in either Celsius or Fahrenheit, whichever is more appropriate.\nNever display the temperature in Kelvin.\nProvide a recommendation on how to prepare and what to wear (e.g. bring an umbrella, wear a windbreaker, a warm jacket, etc.).\nRespond to activity-related questions (e.g. 'Can I play cricket today in Delhi?') with appropriate advice based on the weather conditions. And Use Attraction Emoji's for clear user understanding... And Also Inform about the Flood Situations or not at the Beggining with Icons",
   })
 
   const generationConfig = {

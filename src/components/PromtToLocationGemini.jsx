@@ -96,6 +96,7 @@ function PromptToLocationGemini(prompt) {
         countryCode: countryCode,
         unit: unit,
       }
+      console.log('Sheep',locationObj)
       return locationObj
     } else {
       console.log(null)
